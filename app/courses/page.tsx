@@ -7,7 +7,7 @@ export default async function CoursesPage() {
   return (
     <main className="mx-auto max-w-5xl p-6">
       <h1 className="mb-4 text-3xl font-bold">Courses</h1>
-      <div className="flex flex-col gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {courses.map((course) => (
           <CourseCard key={course.id} {...course} />
         ))}
